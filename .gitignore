@@ -335,3 +335,68 @@ terraform.tfvars
 generated/
 rendered/
 compiled/
+
+# Shell scripts
+*.sh.bak
+*.sh.tmp
+*.sh.old
+*.orig
+*.rej
+.bash_history
+.zsh_history
+.sh_history
+.history
+
+# Shell configuration (local overrides)
+.bashrc.local
+.zshrc.local
+.profile.local
+.bash_profile.local
+.bash_aliases.local
+.shellrc.local
+
+# Shell runtime files
+.bash_sessions/
+.zsh_sessions/
+.lesshst
+.viminfo
+
+# Script outputs and logs
+script.log
+typescript
+*.out
+*.err
+output/
+logs/
+run*.log
+execution*.log
+
+# Temporary shell files
+/tmp/
+temp/
+*.tmp
+nohup.out
+.nohup.out
+
+# Process and lock files
+*.pid
+*.lock
+.lockfile
+
+# Core dumps
+core
+core.*
+*.core
+
+# Shell testing frameworks
+test_results/
+coverage/
+.coverage
+shunit2/
+bats-core/
+test-output/
+
+# Generated scripts
+auto-generated/
+build-scripts/
+deploy-scripts/generated/
