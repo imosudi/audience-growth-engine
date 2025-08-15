@@ -205,3 +205,133 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Docker and Kubernetes
+#  Docker and Kubernetes specific template is maintained in a separate Docker.gitignore
+
+# Docker
+Dockerfile.local
+docker-compose.override.yml
+.dockerignore
+*.tar
+*.tar.gz
+docker-compose.*.yml
+.docker/
+
+# Kubernetes
+*.kubeconfig
+kubeconfig
+kube-config
+.kube/
+k8s-secrets/
+*.secret.yaml
+*-secret.yaml
+secrets/
+helm-values-*.yaml
+values-*.yaml
+chart-values/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.staging
+.env.production
+.env.test
+*.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Dependencies
+node_modules/
+vendor/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Build outputs
+build/
+dist/
+target/
+out/
+*.o
+*.so
+*.dylib
+*.exe
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+.cache/
+*.tmp
+*.temp
+
+# SSL/TLS certificates
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+certs/
+certificates/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+data/
+*.sql
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+*~
+
+# Helm
+charts/*.tgz
+.helm/
+
+# Terraform (if used with K8s)
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+*.tfvars
+
+# Generated manifests
+generated/
+rendered/
+compiled/
